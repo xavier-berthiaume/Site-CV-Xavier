@@ -5,8 +5,32 @@ $light_color: #778DA9;
 $dark_color: #1B263B;
 
 .layout-block {
-  width: 100%;
+  width: calc(100% - 75px);
   height: 100vh;
 
   padding-left: 75px;
-};
+
+  h1 {
+    margin-top: 0px;
+  }
+}
+
+#greeter {
+  background-image: linear-gradient($primary_color, $light_color)
+}
+
+#about {
+  background-image: linear-gradient($light_color, $primary_color)
+}
+
+#skills {
+  background-image: linear-gradient($primary_color, $light_color)
+}
+
+#projects {
+  background-image: linear-gradient($light_color, $primary_color)
+}
+
+#contact {
+  background-image: linear-gradient($primary_color, $light_color)
+}
