@@ -1,0 +1,17 @@
+$primary_color: #415A77;
+$secondary_color: #0D1B2A;
+$highlight_color: #E0E1DD;
+$light_color: #778DA9;
+$dark_color: #1B263B;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.layout-block {
+  width: 100%;
+  height: 100vh;
+
+  padding-left: 75px;
+};
