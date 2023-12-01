@@ -6,7 +6,7 @@ $dark_color: #1B263B;
 
 .layout-block {
   width: calc(100% - 75px);
-  height: 100vh;
+  min-height: 100vh;
 
   padding-left: 75px;
 
