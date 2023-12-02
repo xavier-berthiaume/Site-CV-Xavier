@@ -2,22 +2,27 @@ import { useState } from 'react'
 
 import './App.scss'
 import Sidebar from './components/sidebar/Sidebar'
-import GreeterLayout from './components/GreeterLayout'
-import SkillLayout from './components/SkillLayout'
-import ProjectLayout from './components/ProjectLayout'
-import ContactLayout from './components/ContactLayout'
-import AboutLayout from './components/AboutLayout'
+import ContentBlock from './components/ContentBlock'
+import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome'
 
 function App() {
 
   return (
     <>
       <Sidebar />
-      <GreeterLayout />
-      <AboutLayout />
-      <SkillLayout />
-      <ProjectLayout />
-      <ContactLayout />
+
+
+
+      <ContentBlock block_name="greeter">
+      </ContentBlock>
+      <ContentBlock block_name="about">
+      </ContentBlock>
+      <ContentBlock block_name="skill">
+      </ContentBlock>
+      <ContentBlock block_name="project">
+      </ContentBlock>
+      <ContentBlock block_name="contact">
+      </ContentBlock>
     </>
   )
 }
