@@ -22,16 +22,16 @@ function App() {
 
 
       <ContentBlock block_name={block_list[0][0].toString()}>
-        <h1>Test?</h1>
+        <h1 className="greeter-title">Hi there, <br />&ensp;I'm Xavier</h1>
       </ContentBlock>
       <ContentBlock block_name={block_list[1][0].toString()}>
-        <h1>Test?</h1>
+        <h1 className="about-title">A bit about me</h1>
       </ContentBlock>
       <ContentBlock block_name={block_list[2][0].toString()}>
-        <h1>Test?</h1>
+        <h1 className="work-title">My work experience</h1>
       </ContentBlock>
       <ContentBlock block_name={block_list[3][0].toString()}>
-        <h1>Test?</h1>
+        <h1 className="skills-title">My skills</h1>
       </ContentBlock>
       <ContentBlock block_name={block_list[4][0].toString()}>
         <h1>Test?</h1>
