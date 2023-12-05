@@ -3,8 +3,8 @@ import { useState } from 'react'
 import './App.scss'
 import Sidebar from './components/sidebar/Sidebar'
 import ContentBlock from './components/ContentBlock'
-import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome'
 import { faCode, faEnvelope, faHome, faUser, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
+import InfoBox from './components/info-box/InfoBox'
 
 function App() {
 
@@ -28,13 +28,27 @@ function App() {
         <h1 className="about-title">A bit about me</h1>
       </ContentBlock>
       <ContentBlock block_name={block_list[2][0].toString()}>
-        <h1 className="work-title">My work experience</h1>
+        <h1 className="work-title">My Work Experience</h1>
+        <div className="centering-div">
+          <InfoBox box_name="test" box_width={15}>
+            <h1>Test</h1>
+            <p>test further content</p>
+          </InfoBox>
+          <InfoBox box_name="test2" box_width={25}>
+            <h1>Test</h1>
+            <p>test further content</p>
+          </InfoBox>
+          <InfoBox box_name="test3" box_width={35}>
+            <h1>Test</h1>
+            <p>test further content</p>
+          </InfoBox>
+        </div>
       </ContentBlock>
       <ContentBlock block_name={block_list[3][0].toString()}>
-        <h1 className="skills-title">My skills</h1>
+        <h1 className="skills-title">My Skills</h1>
       </ContentBlock>
       <ContentBlock block_name={block_list[4][0].toString()}>
-        <h1>Test?</h1>
+        <h1 className="contact-title">Contact Me</h1>
       </ContentBlock>
     </>
   )

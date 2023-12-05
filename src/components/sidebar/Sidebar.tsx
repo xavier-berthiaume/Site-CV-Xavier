@@ -32,7 +32,7 @@ function Sidebar({block_list}: SidebarProps) {
 
 		<div className="nav-bar">
 			
-			<a href="#" onClick={scrollToTop} className="logo">XB</a>
+			{<a href="#" onClick={scrollToTop} className="logo">XB</a>}
 
 			<nav>
 
