@@ -1,0 +1,43 @@
+@use "../../App.scss";
+
+// Eventually implement a glowing effect on the image glow component.
+// A way to get this done is to use the glow keyframes and apply them
+// to the background blurred image. Doing this with the :hover selector
+// the straightforward way doesn't seem to work however.
+
+@keyframes glow {
+  from {
+    transform: scale(0.95);
+  }
+ 
+  to {
+    transform: scale(1);
+  }
+}
+
+.glow-image {
+	position: relative;
+	display: inline-block;
+
+	margin: auto;
+	
+	border-radius: 5px;
+
+	img {
+		position: absolute;
+		object-fit: cover;
+		border-radius: inherit;
+
+	}
+}
+
+.cover-image {
+	z-index: 999;	
+	transform: scale(0.95);
+}
+
+.blur-image {
+	z-index: 998;
+	transform: scale(0.98);
+	filter: blur(0.6rem) saturate(2);
+}

@@ -1,10 +1,9 @@
-import { useState } from 'react'
-
 import './App.scss'
 import Sidebar from './components/sidebar/Sidebar'
 import ContentBlock from './components/ContentBlock'
 import { faCode, faEnvelope, faHome, faUser, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 import InfoBox from './components/info-box/InfoBox'
+import ImageGlow from './components/image-glow/ImageGlow'
 
 function App() {
 
@@ -28,9 +27,15 @@ function App() {
         <h1 className="about-title">A bit about me</h1>
       </ContentBlock>
       <ContentBlock block_name={block_list[2][0].toString()}>
-        <h1 className="work-title">My Work Experience</h1>
+        <h1 className="work-title">My Experience</h1>
         <div className="centering-div">
-          <InfoBox box_name="test" box_width={15}>
+          <InfoBox box_name="test" box_width={16}>
+            <ImageGlow
+              src="https://picsum.photos/230/345?random=0"
+              alt="Glowing Image"
+              width={230}
+              height={345}
+            />
             <h1>Test</h1>
             <p>test further content</p>
           </InfoBox>
